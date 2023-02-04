@@ -9,8 +9,7 @@ public void draw()
 {
   sierpinski(200,200,400);
 }
-public void mouseDragged()//optional
-{
+
 
 }
 public void sierpinski(int x, int y, int len) 
