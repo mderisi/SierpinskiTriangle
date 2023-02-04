@@ -3,22 +3,25 @@ public void setup()
 {
   size(400, 400);
   background(#FFDEDE);
-  noFill();
+
 }
 public void draw()
 {
-  sierpinski(200,200,400);
-}
+  sierpinski(5,200,10);
 
+  fill(0,0,0);
+}
 
 public void sierpinski(int x, int y, int len) 
 {
-  if (len <= 10){
+    
+  if (len >= 400){
     circle(x,y,len);  
    }
    else {
-    sierpinski(x/2, y, len/2);
-    stroke(0);
+    fill(200, 100, 200);
+    sierpinski(x*2, y, len*2);
     circle(x,y,len);
+    stroke(0);
     }
 }
