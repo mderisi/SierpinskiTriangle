@@ -14,14 +14,5 @@ public void draw()
 
 public void sierpinski(int x, int y, int len) 
 {
-
-  if(len >= 400){
     circle(x,y,len);  
-   }
-   else {
-    fill(200, 100, 200);
-    sierpinski(x*2, y, len*2);
-    circle(x,y,len);
-    stroke(0);
-    }
 }
