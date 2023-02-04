@@ -7,7 +7,7 @@ public void setup()
 }
 public void draw()
 {
-  sierpinski(5,200,10);
+  sierpinski(200,200,400);
 
   fill(0,0,0);
 }
