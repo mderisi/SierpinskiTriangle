@@ -18,6 +18,7 @@ public void sierpinski(int x, int y, int len)
    }
    else {
     sierpinski(x/2, y, len/2);
+    stroke(0);
     circle(x,y,len);
     }
 }
