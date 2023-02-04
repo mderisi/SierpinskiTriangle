@@ -7,16 +7,16 @@ public void setup()
 }
 public void draw()
 {
-  sierpinski(200,200,400);
+  sierpinski(200,200,400, 400);
 }
 
-public void sierpinski(int x, int y, int len) 
+public void sierpinski(int x, int y, int len, int ler) 
 {
   if (len <= 10){
-    circle(x,y,len);  
+    ellipse(x,y,len, ler);  
    }
    else {
-    sierpinski(x/2, y, len/2);
-    circle(x,y,len);
+    sierpinski(x/2, y, len/2, ler/2);
+    ellipse(x,y,len,ler);
     }
 }
