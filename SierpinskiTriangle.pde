@@ -11,7 +11,6 @@ public void draw()
 }
 
 
-}
 public void sierpinski(int x, int y, int len) 
 {
   if (len <= 10){
